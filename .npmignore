@@ -1,13 +1,6 @@
 build/
-config/
-docs/
-doc/
-example/
-static/
 .idea/
 .github/
-postcss.config.js
-.bin/
 .DS_Store
 .npm-debug.log
 .babelrc

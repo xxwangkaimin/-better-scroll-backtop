@@ -2,7 +2,7 @@
   "name": "better-scroll2-backtop",
   "version": "1.0.0",
   "description": "@better-scroll-backtop",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --progress --config build/webpack.dev.js",
     "build": "webpack --mode=production --config build/webpack.build.js",
