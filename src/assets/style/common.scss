@@ -1,0 +1,61 @@
+@import "./transition";
+
+* {
+  box-sizing: border-box;
+}
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family: 'PingFang SC', tahoma, arial, 'helvetica neue', 'hiragino sans gb', 'microsoft yahei', sans-serif;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  word-break: break-all;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"], input[type="text"] {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input {
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #fff inset !important;
+    -webkit-text-fill-color: #323232 !important;
+  }
+}
+
+a {
+  &:link, &:visited, &:hover {
+    color: #333;
+  }
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.app-main {
+  overflow: hidden;
+}
