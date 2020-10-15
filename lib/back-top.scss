@@ -1,0 +1,53 @@
+@-webkit-keyframes scrollBackTopFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollBackTopFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scrollBackTopFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scrollBackTopFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bs-scroll-back-top {
+  z-index: 9990;
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0;
+
+  &.scroll-back-top-fade-in {
+    -webkit-animation: scrollBackTopFadeIn .5s linear forwards;
+    animation: scrollBackTopFadeIn .5s linear forwards;
+  }
+
+  &.scroll-back-top-fade-out {
+    pointer-events: none;
+    -webkit-animation: scrollBackTopFadeOut .5s linear forwards;
+    animation: scrollBackTopFadeOut .5s linear forwards;
+  }
+}

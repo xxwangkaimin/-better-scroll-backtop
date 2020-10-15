@@ -1,6 +1,6 @@
 import BScroll from '@better-scroll/core';
 import {ease, extend, Probe} from '@better-scroll/shared-utils'
-import './back-top.scss'
+import '../../../lib/back-top.scss'
 import propertiesConfig from "./propertiesConfig";
 
 export declare type BackTopOptions = Partial<BackTopConfig> | true;
@@ -51,7 +51,7 @@ export default class BackTop {
             bottom: 30,
             width: 36,
             rollDistance: 667,
-            backTopImage: require('./back-top.png'),
+            backTopImage: require('../../../lib/back-top.png'),
             bounceTime: 800
         }
         this.options = extend(defaultOptions, userOptions)
