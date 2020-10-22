@@ -1,12 +1,12 @@
 {
   "name": "better-scroll2-backtop",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "@better-scroll-backtop",
   "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --progress --config build/webpack.dev.js",
     "build": "webpack --mode=production --config build/webpack.build.js",
-    "build:npm": "tsc src/plugins/back-top/index.ts"
+    "build:npm": "webpack --mode=production --config build/webpack.build.npm.js"
   },
   "repository": {
     "type": "git",
@@ -40,8 +40,6 @@
   },
   "dependencies": {
     "@better-scroll/core": "^2.0.4",
-    "@better-scroll/observe-dom": "^2.0.4",
-    "vue": "^2.6.12",
-    "vue-router": "^3.4.6"
+    "vue": "^2.6.12"
   }
 }
