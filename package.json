@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development --progress --config build/webpack.dev.js",
     "build": "webpack --mode=production --config build/webpack.build.js",
-    "build:npm": "webpack --mode=production --config build/webpack.build.npm.js"
+    "build:npm": "tsc src/plugins/back-top/index.ts"
   },
   "repository": {
     "type": "git",
