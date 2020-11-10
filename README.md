@@ -1,5 +1,5 @@
-# -better-scroll2-backtop
-转为@better-scroll 2.x写的返回顶部插件
+# better-scroll2-backtop
+专为@better-scroll 2.x写的返回顶部插件
 
 # Install
 ```bash
