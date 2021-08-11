@@ -10,7 +10,7 @@
 
 <script>
 import BScroll from '@better-scroll/core'
-import BackTop from '@/plugins/back-top'
+import BackTop from '../../src/index'
 
 BScroll.use(BackTop)
 export default {

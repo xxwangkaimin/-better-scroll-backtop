@@ -3,9 +3,8 @@
   "version": "1.0.5",
   "description": "@better-scroll-backtop",
   "main": "lib/index.js",
+  "typings": "lib/types/index.d.ts",
   "scripts": {
-    "start": "webpack-dev-server --mode=development --progress --config build/webpack.dev.js",
-    "build": "webpack --mode=production --config build/webpack.build.js",
     "build:npm": "tsc"
   },
   "repository": {
@@ -18,32 +17,8 @@
     "url": "https://github.com/xxwangkaimin/better-scroll2-backtop/issues"
   },
   "homepage": "https://github.com/xxwangkaimin/better-scroll2-backtop#readme",
-  "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "copy-webpack-plugin": "^5.1.2",
-    "css-loader": "^5.0.0",
-    "file-loader": "^6.1.1",
-    "html-webpack-plugin": "^4.5.0",
-    "mini-css-extract-plugin": "^1.6.2",
-    "sass": "^1.27.0",
-    "sass-loader": "^10.0.3",
-    "script-ext-html-webpack-plugin": "^2.1.5",
-    "style-loader": "^2.0.0",
-    "ts-loader": "^8.0.5",
-    "typescript": "^4.0.3",
-    "url-loader": "^4.1.1",
-    "vue-loader": "^15.9.3",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.2.0"
-  },
   "dependencies": {
     "@better-scroll/core": "^2.0.4",
-    "vue": "^2.6.12"
+    "@types/node": "^16.4.13"
   }
 }

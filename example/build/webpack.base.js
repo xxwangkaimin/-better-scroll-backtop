@@ -4,7 +4,7 @@ const {VueLoaderPlugin} = require('vue-loader')
 
 module.exports = {
     entry: {
-        app: './src/main.js'
+        app: './vue/main.js'
     },
     output: {
         publicPath: '/',
@@ -15,7 +15,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.vue', '.json', '.ts'],
         alias: {
-            '@': path.resolve(__dirname, '../src')
+            '@': path.resolve(__dirname, '../vue')
         }
     },
     module: {

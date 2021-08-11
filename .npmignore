@@ -1,5 +1,8 @@
-build/
 .idea/
+.github/
+build/
+dist/
+example/
 .github/
 .DS_Store
 .npm-debug.log
@@ -9,5 +12,4 @@ build/
 .eslintrc.js
 .tsconfig.json
 package-lock.json
-
-
+tsconfig.json
