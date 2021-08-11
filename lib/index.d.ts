@@ -2,9 +2,9 @@ import BScroll from '@better-scroll/core';
 import './back-top.scss';
 export declare type BackTopOptions = Partial<BackTopConfig> | true;
 export interface BackTopConfig {
-    right: number;
-    bottom: number;
-    width: number;
+    right: number | string;
+    bottom: number | string;
+    width: number | string;
     rollDistance: number;
     backTopImage: string;
     bounceTime: number;

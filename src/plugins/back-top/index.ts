@@ -2,13 +2,14 @@ import BScroll from '@better-scroll/core';
 import {ease, extend, Probe} from '@better-scroll/shared-utils'
 import './back-top.scss'
 import propertiesConfig from "./propertiesConfig";
+import {addUnit} from "./addUnit";
 
 export declare type BackTopOptions = Partial<BackTopConfig> | true;
 
 export interface BackTopConfig {
-    right: number,
-    bottom: number,
-    width: number,
+    right: number | string,
+    bottom: number | string,
+    width: number | string,
     rollDistance: number,
     backTopImage: string,
     bounceTime: number
@@ -72,10 +73,10 @@ export default class BackTop {
             this.backTopBtn = new Image()
             this.backTopBtn.src = this.options?.backTopImage
             this.backTopBtn.setAttribute('id', 'bs-scroll-back-top')
-            this.backTopBtn.style.right = this.options?.right + 'px'
-            this.backTopBtn.style.bottom = this.options?.bottom + 'px'
-            this.backTopBtn.style.width = this.options?.width + 'px'
-            this.backTopBtn.style.height = this.options?.width + 'px'
+            this.backTopBtn.style.right = addUnit(this.options?.right)
+            this.backTopBtn.style.bottom = addUnit(this.options?.bottom)
+            this.backTopBtn.style.width = addUnit(this.options?.width)
+            this.backTopBtn.style.height = addUnit(this.options?.width)
         } else
             this.backTopBtn = backTopBtn
         this.backTopBtn.classList.add('bs-scroll-back-top')

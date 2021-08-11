@@ -21,18 +21,18 @@ const bs = new BScroll('.wrapper', {
 ## backTop 选项对象
 ```html
 right
-·类型：number
-·默认值：10
+·类型：number|string
+·默认值：10px
 配置返回顶部按钮距离屏幕右侧距离
 
 bottom
-·类型：number
-·默认值：30
+·类型：number|string
+·默认值：30px
 配置返回顶部按钮距离屏幕下侧距离
 
 width
-·类型：number
-·默认值：36
+·类型：number|string
+·默认值：36px
 配置返回顶部按钮宽度
 
 rollDistance
