@@ -1,6 +1,6 @@
 {
   "name": "better-scroll2-backtop",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "@better-scroll-backtop",
   "main": "lib/index.js",
   "scripts": {
