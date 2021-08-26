@@ -20,5 +20,7 @@
   "dependencies": {
     "@better-scroll/core": "^2.0.4",
     "@types/node": "^16.4.13"
-  }
+  },
+  "bundleDependencies": false,
+  "deprecated": false
 }
